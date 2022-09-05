@@ -1,0 +1,132 @@
+.caixa{
+    background-color: var(--branco);
+    border-bottom: 1px solid #858585;
+}
+
+.footer-titele{
+    color: var(--azul-degrade);
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 1em;
+    margin: 0 0 1em 1em;
+}
+
+.footer-text{
+    color: var(--azul-degrade);
+    margin: 1.5em 0 1.5em 0;
+    font-weight: 300;
+    margin: 0.5em 0 1em 1em;
+}
+
+.email{
+    background-color: transparent;
+    border: 1px solid #000000;
+    color: var(--azul-degrade);
+    border-radius: 24px;
+    padding: 1em;
+    width: 87%;
+    margin: 0.5em 0 1.5em 1em;
+}
+
+.email::placeholder{
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 3em;
+    color: var(--azul-degrade);
+    background: url(../img/Vector2.svg) no-repeat;
+    background-position: 1em;
+}
+
+.nome-footer{
+    margin: 1em 0 1em 1em;
+}
+
+.lista-footer_item, 
+.lista-footer_titulo{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .caixa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .caixa-flex{
+        width: 30%;
+        margin: 1em 0 3em 0;
+    }
+
+    .footer-titele{
+        font-size: 24px;
+    }
+
+    .footer-text{
+        font-size: 16px;
+    }
+
+    .email{
+        width: 30%;
+        height: 25%;
+        margin-left:4em;
+    }
+
+    footer{
+        display:flex;
+        justify-content: space-around;
+    }
+
+    .nome-footer{
+        font-size: 24px;
+    }
+
+    .lista-footer_titulo{
+        display: block;
+        color: var(--cinza-titulo);
+        margin-top: 1em;
+        margin-bottom: 2em;
+        text-transform: uppercase;
+    }
+    
+    .lista-footer_item{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+
+    .lista-footer_link{
+        margin-left: 1em;
+        color: var(--cinza-texto);
+        font-weight: 400;
+        font-size: 14px;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .caixa-flex{
+        width: 20%;
+        margin: 1em 0 3em 0;
+    }
+
+    .footer-titele{
+        font-size: 24px;
+    }
+
+    .footer-text{
+        font-size: 16px;
+    }
+
+    .email{
+        width: 20%;
+        height: 25%;
+        margin-left:4em;
+    }
+
+    .lista-footer{
+        padding-left: 1em;
+        border-left: 1px solid #000000;
+    }
+}
